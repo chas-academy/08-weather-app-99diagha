@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+
+}
+
+.forecast > table {
+    margin-bottom: 20px;
+}
+
