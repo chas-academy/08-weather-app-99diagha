@@ -1,9 +1,36 @@
-.container {
+.wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.wrapper > * {
+    margin: 20px;
+}
+
+.forecast {
+    flex-basis: 40%;
 }
 
 .forecast > table {
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.forecast > table td:not(:first-child) {
+    text-align: center;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+input[type="radio"]:checked + label {
+    color: black;
+}
+
+label {
+    color: blue;
+    cursor: pointer;
 }
 
